@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: 'Poppins';
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.section-divider {
+  border-top: 2px line var(--ifm-color-primary);
+  margin: 3rem 0;
+  opacity: 0.4;
+}
+
+/* Main heading colors */
+h1 {
+  color: #1a4d2e; /* Deep green for H1 */
+}
+
+h2 {
+  color: #2e8555; /* Medium green for H2 */
+}
+
+h3 {
+  color: #3ca87a; /* Lighter green for H3 */
+}
+
+/* Optional: Add transitions for smooth appearance */
+h1, h2, h3 {
+  transition: color 0.3s ease;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #2e8555;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* === Markdown Table Styling === */
+/* ✅ Fix table overflow and spacing issues */
+.markdown table {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  display: table;
+  table-layout: auto;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.markdown {
+  overflow-x: hidden;
+}
+
+.markdown table th,
+.markdown table td {
+  word-wrap: break-word;
+  white-space: normal;
+}
+.markdown table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #f9f9f9; /* Light background for table */
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.markdown table th {
+  background-color: #2e8555; /* Your primary green */
+  color: white;
+  text-align: left;
+  padding: 12px;
+}
+
+.markdown table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  color: #1a1a1a;
+}
+
+.markdown table tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.markdown table tr:hover {
+  background-color: #e0f7ea;
+}
