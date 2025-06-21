@@ -1,41 +1,56 @@
-# Website
+# Proof-of-concept Documentation Site
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This is a documentation website built using [Docusaurus 2](https://docusaurus.io/), a modern static site generator.
+
+---
 
 ## Installation
 
+Make sure you have [Node.js](https://nodejs.org/) installed. Then install dependencies:
+
 ```bash
-yarn
+npm install
 ```
 
 ## Local Development
+Start the local dev server:
 
 ```bash
-yarn start
+npm run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Open your browser and go to: 
+http://localhost:3000
 
-## Build
+## Build for Production
 
 ```bash
-yarn build
+npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+The generated static content will be in the `build/` directory.
 
-## Deployment
+## Documentation Structure
 
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
+```plaintext
+docs/
+├── overview.md
+├── getting-started.md
+├── system-configuration/
+│   ├── network.md
+│   ├── firewall.md
+│   └── routing.md
+├── advanced-configuration/
+│   ├── vpn-setup.md
+│   └── high-availability.md
+└── command-examples.md
 ```
 
-Not using SSH:
+## Notes 
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+- Powered by [Docusaurus 2](https://docusaurus.io/) 
+- Maintained by: [Muhammad-099](https://github.com/Muhammad-099)
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## License
+
+This project is open source and available under the MIT License.
